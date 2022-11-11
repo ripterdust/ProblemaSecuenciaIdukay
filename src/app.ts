@@ -4,5 +4,10 @@ export const calculateTerm = (position: number): number => {
         return position + 1
     }
 
-    return 0
+    const numberOfConsecutive = 4
+    const residue = (position % numberOfConsecutive) + 1
+    const dividedByConsecutive = parseInt(`${position / numberOfConsecutive}`)
+    const result = dividedByConsecutive * 2 + residue
+
+    return result
 }
