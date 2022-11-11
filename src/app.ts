@@ -19,10 +19,5 @@ export const calculateTerm = (position: number): number => {
 
     const result: number = doubleModule * difference
 
-    if (result == position) {
-        const desviation: number = 1.0724254301636285
-        return result / desviation
-    }
-
     return result
 }
