@@ -1,9 +1,7 @@
 import { calculateTerm } from './app'
 
-const input = 76
-const result = {
-    input,
-    result: calculateTerm(input),
-}
+const inputs = [0, 1, 5, 76, 545421, 87123641123172368]
 
-console.table(result)
+inputs.map((input: number) => {
+    calculateTerm(input)
+})
