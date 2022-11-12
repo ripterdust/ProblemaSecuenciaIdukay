@@ -1,3 +1,5 @@
+import { deviation } from './misc/desviation.misc'
+
 export const calculateTerm = (position: number): number => {
     const sequence: number[] = [1, 2, 3, 4]
 
@@ -19,5 +21,9 @@ export const calculateTerm = (position: number): number => {
 
     const result: number = doubleModule * difference
 
+    if (result === position) {
+        console.log(result / deviation)
+        return result / deviation
+    }
     return result
 }
